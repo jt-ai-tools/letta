@@ -9,6 +9,7 @@ permissions:
 
 jobs:
   validate:
+    if: "${{ github.repository == 'letta-ai/letta' }}"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
